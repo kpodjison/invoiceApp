@@ -31,7 +31,7 @@ The app’s dashboard provides an overview of your business's financial and cust
 - View, edit, and print invoices.
 
 ### Expenditure Management
-- Add expenditure items (e.g., categories like travel, office supplies).
+- Add expenditure items (e.g., categories like travel, office supplies, fuel, cleaning supplies).
 - Record expenditures by selecting an item, entering an amount, and adding a description.
 - Edit expenditure records.
 
@@ -41,5 +41,31 @@ The app’s dashboard provides an overview of your business's financial and cust
 ---
 
 ## Installation
+1. Clone the repository
 
+   ```bash
+   git clone https://github.com/kpodjison/invoiceApp.git
+   cd invoiceApp
+2. Install dependencies
 
+    ```bash   
+   composer install
+   npm install
+3. Set up the environment     
+    copy .env.example file and rename it to .env
+4. Run migrations
+
+    ```bash   
+   php artisan migrate
+5. Start frontend server
+
+    ```bash   
+    npm run dev
+6. Start backend server
+
+    ```bash   
+    php artisan serve
+7. Open app in your browser
+
+    ```bash   
+    http://localhost:8000
